@@ -66,3 +66,11 @@ def game():
                 fighter.change_weapon(Bow())
             elif weapon_choice == "3":
                 fighter.change_weapon(Axe())
+            else:
+                print("Некорректный ввод!")
+
+            if monster.health <= 0:
+                print(f"{fighter.name} победил монстра {monster.name}!")
+                break
+
+game()                
